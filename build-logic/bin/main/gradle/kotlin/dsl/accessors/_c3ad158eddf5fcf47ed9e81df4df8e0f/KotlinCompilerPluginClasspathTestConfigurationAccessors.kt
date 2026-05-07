@@ -24,12 +24,13 @@
     "redundant_projection",
     "RemoveRedundantBackticks",
     "ObjectPropertyName",
-    "deprecation",
-    "detekt:all"
+    "deprecation"
 )
 @file:org.gradle.api.Generated
 
-package gradle.kotlin.dsl.accessors._ab3339597dfc5c287cbca39a4f2fe250
+/* ktlint-disable */
+
+package gradle.kotlin.dsl.accessors._c3ad158eddf5fcf47ed9e81df4df8e0f
 
 
 import org.gradle.api.Action
@@ -48,7 +49,6 @@ import org.gradle.api.artifacts.PublishArtifact
 import org.gradle.api.artifacts.dsl.ArtifactHandler
 import org.gradle.api.artifacts.dsl.DependencyConstraintHandler
 import org.gradle.api.artifacts.dsl.DependencyHandler
-import org.gradle.api.initialization.SharedModelDefaults
 import org.gradle.api.provider.Provider
 import org.gradle.api.provider.ProviderConvertible
 import org.gradle.api.tasks.TaskContainer
@@ -59,7 +59,7 @@ import org.gradle.kotlin.dsl.accessors.runtime.*
 
 
 /**
- * Adds a dependency to the 'runtimeElements' configuration.
+ * Adds a dependency to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param dependencyNotation notation for the dependency to be added.
  * @return The dependency.
@@ -67,11 +67,11 @@ import org.gradle.kotlin.dsl.accessors.runtime.*
  * @see [DependencyHandler.add]
  */
 internal
-fun DependencyHandler.`runtimeElements`(dependencyNotation: Any): Dependency? =
-    add("runtimeElements", dependencyNotation)
+fun DependencyHandler.`kotlinCompilerPluginClasspathTest`(dependencyNotation: Any): Dependency? =
+    add("kotlinCompilerPluginClasspathTest", dependencyNotation)
 
 /**
- * Adds a dependency to the 'runtimeElements' configuration.
+ * Adds a dependency to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param dependencyNotation notation for the dependency to be added.
  * @param dependencyConfiguration expression to use to configure the dependency.
@@ -80,15 +80,15 @@ fun DependencyHandler.`runtimeElements`(dependencyNotation: Any): Dependency? =
  * @see [DependencyHandler.add]
  */
 internal
-fun DependencyHandler.`runtimeElements`(
+fun DependencyHandler.`kotlinCompilerPluginClasspathTest`(
     dependencyNotation: String,
     dependencyConfiguration: Action<ExternalModuleDependency>
 ): ExternalModuleDependency = addDependencyTo(
-    this, "runtimeElements", dependencyNotation, dependencyConfiguration
+    this, "kotlinCompilerPluginClasspathTest", dependencyNotation, dependencyConfiguration
 ) as ExternalModuleDependency
 
 /**
- * Adds a dependency to the 'runtimeElements' configuration.
+ * Adds a dependency to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param dependencyNotation notation for the dependency to be added.
  * @param dependencyConfiguration expression to use to configure the dependency.
@@ -97,15 +97,15 @@ fun DependencyHandler.`runtimeElements`(
  * @see [DependencyHandler.add]
  */
 internal
-fun DependencyHandler.`runtimeElements`(
+fun DependencyHandler.`kotlinCompilerPluginClasspathTest`(
     dependencyNotation: Provider<*>,
     dependencyConfiguration: Action<ExternalModuleDependency>
 ): Unit = addConfiguredDependencyTo(
-    this, "runtimeElements", dependencyNotation, dependencyConfiguration
+    this, "kotlinCompilerPluginClasspathTest", dependencyNotation, dependencyConfiguration
 )
 
 /**
- * Adds a dependency to the 'runtimeElements' configuration.
+ * Adds a dependency to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param dependencyNotation notation for the dependency to be added.
  * @param dependencyConfiguration expression to use to configure the dependency.
@@ -114,15 +114,15 @@ fun DependencyHandler.`runtimeElements`(
  * @see [DependencyHandler.add]
  */
 internal
-fun DependencyHandler.`runtimeElements`(
+fun DependencyHandler.`kotlinCompilerPluginClasspathTest`(
     dependencyNotation: ProviderConvertible<*>,
     dependencyConfiguration: Action<ExternalModuleDependency>
 ): Unit = addConfiguredDependencyTo(
-    this, "runtimeElements", dependencyNotation, dependencyConfiguration
+    this, "kotlinCompilerPluginClasspathTest", dependencyNotation, dependencyConfiguration
 )
 
 /**
- * Adds a dependency to the 'runtimeElements' configuration.
+ * Adds a dependency to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param group the group of the module to be added as a dependency.
  * @param name the name of the module to be added as a dependency.
@@ -136,9 +136,8 @@ fun DependencyHandler.`runtimeElements`(
  * @see [DependencyHandler.create]
  * @see [DependencyHandler.add]
  */
-@Deprecated("Use single-string notation instead")
 internal
-fun DependencyHandler.`runtimeElements`(
+fun DependencyHandler.`kotlinCompilerPluginClasspathTest`(
     group: String,
     name: String,
     version: String? = null,
@@ -147,11 +146,11 @@ fun DependencyHandler.`runtimeElements`(
     ext: String? = null,
     dependencyConfiguration: Action<ExternalModuleDependency>? = null
 ): ExternalModuleDependency = addExternalModuleDependencyTo(
-    this, "runtimeElements", group, name, version, configuration, classifier, ext, dependencyConfiguration
+    this, "kotlinCompilerPluginClasspathTest", group, name, version, configuration, classifier, ext, dependencyConfiguration
 )
 
 /**
- * Adds a dependency to the 'runtimeElements' configuration.
+ * Adds a dependency to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param dependency dependency to be added.
  * @param dependencyConfiguration expression to use to configure the dependency.
@@ -160,13 +159,13 @@ fun DependencyHandler.`runtimeElements`(
  * @see [DependencyHandler.add]
  */
 internal
-fun <T : ModuleDependency> DependencyHandler.`runtimeElements`(
+fun <T : ModuleDependency> DependencyHandler.`kotlinCompilerPluginClasspathTest`(
     dependency: T,
     dependencyConfiguration: T.() -> Unit
-): T = add("runtimeElements", dependency, dependencyConfiguration)
+): T = add("kotlinCompilerPluginClasspathTest", dependency, dependencyConfiguration)
 
 /**
- * Adds a dependency constraint to the 'runtimeElements' configuration.
+ * Adds a dependency constraint to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param constraintNotation the dependency constraint notation
  *
@@ -175,11 +174,11 @@ fun <T : ModuleDependency> DependencyHandler.`runtimeElements`(
  * @see [DependencyConstraintHandler.add]
  */
 internal
-fun DependencyConstraintHandler.`runtimeElements`(constraintNotation: Any): DependencyConstraint =
-    add("runtimeElements", constraintNotation)
+fun DependencyConstraintHandler.`kotlinCompilerPluginClasspathTest`(constraintNotation: Any): DependencyConstraint =
+    add("kotlinCompilerPluginClasspathTest", constraintNotation)
 
 /**
- * Adds a dependency constraint to the 'runtimeElements' configuration.
+ * Adds a dependency constraint to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param constraintNotation the dependency constraint notation
  * @param block the block to use to configure the dependency constraint
@@ -189,11 +188,11 @@ fun DependencyConstraintHandler.`runtimeElements`(constraintNotation: Any): Depe
  * @see [DependencyConstraintHandler.add]
  */
 internal
-fun DependencyConstraintHandler.`runtimeElements`(constraintNotation: Any, block: DependencyConstraint.() -> Unit): DependencyConstraint =
-    add("runtimeElements", constraintNotation, block)
+fun DependencyConstraintHandler.`kotlinCompilerPluginClasspathTest`(constraintNotation: Any, block: DependencyConstraint.() -> Unit): DependencyConstraint =
+    add("kotlinCompilerPluginClasspathTest", constraintNotation, block)
 
 /**
- * Adds an artifact to the 'runtimeElements' configuration.
+ * Adds an artifact to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param artifactNotation the group of the module to be added as a dependency.
  * @return The artifact.
@@ -201,11 +200,11 @@ fun DependencyConstraintHandler.`runtimeElements`(constraintNotation: Any, block
  * @see [ArtifactHandler.add]
  */
 internal
-fun ArtifactHandler.`runtimeElements`(artifactNotation: Any): PublishArtifact =
-    add("runtimeElements", artifactNotation)
+fun ArtifactHandler.`kotlinCompilerPluginClasspathTest`(artifactNotation: Any): PublishArtifact =
+    add("kotlinCompilerPluginClasspathTest", artifactNotation)
 
 /**
- * Adds an artifact to the 'runtimeElements' configuration.
+ * Adds an artifact to the 'kotlinCompilerPluginClasspathTest' configuration.
  *
  * @param artifactNotation the group of the module to be added as a dependency.
  * @param configureAction The action to execute to configure the artifact.
@@ -214,11 +213,11 @@ fun ArtifactHandler.`runtimeElements`(artifactNotation: Any): PublishArtifact =
  * @see [ArtifactHandler.add]
  */
 internal
-fun ArtifactHandler.`runtimeElements`(
+fun ArtifactHandler.`kotlinCompilerPluginClasspathTest`(
     artifactNotation: Any,
     configureAction:  ConfigurablePublishArtifact.() -> Unit
 ): PublishArtifact =
-    add("runtimeElements", artifactNotation, configureAction)
+    add("kotlinCompilerPluginClasspathTest", artifactNotation, configureAction)
 
 
 

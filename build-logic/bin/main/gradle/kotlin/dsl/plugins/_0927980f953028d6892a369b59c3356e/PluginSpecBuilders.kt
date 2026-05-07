@@ -23,12 +23,13 @@
     "redundant_projection",
     "RemoveRedundantBackticks",
     "ObjectPropertyName",
-    "deprecation",
-    "detekt:all"
+    "deprecation"
 )
 @file:org.gradle.api.Generated
 
-package gradle.kotlin.dsl.plugins._cea115be444c72763756d47925f74ddd
+/* ktlint-disable */
+
+package gradle.kotlin.dsl.plugins._0927980f953028d6892a369b59c3356e
 
 import org.gradle.plugin.use.PluginDependenciesSpec
 import org.gradle.plugin.use.PluginDependencySpec
@@ -251,14 +252,6 @@ val `OrgGradlePluginGroup`.`component-model-base`: PluginDependencySpec
 
 
 /**
- * The `org.gradle.component-reporting-tasks` plugin implemented by [org.gradle.api.plugins.internal.ComponentReportingTasksPlugin].
- */
-internal
-val `OrgGradlePluginGroup`.`component-reporting-tasks`: PluginDependencySpec
-    get() = plugins.id("org.gradle.component-reporting-tasks")
-
-
-/**
  * The `org.gradle.cpp` plugin implemented by [org.gradle.language.cpp.plugins.CppPlugin].
  */
 internal
@@ -320,14 +313,6 @@ val `OrgGradlePluginGroup`.`cunit-test-suite`: PluginDependencySpec
 internal
 val `OrgGradlePluginGroup`.`distribution`: PluginDependencySpec
     get() = plugins.id("org.gradle.distribution")
-
-
-/**
- * The `org.gradle.distribution-base` plugin implemented by [org.gradle.api.distribution.plugins.DistributionBasePlugin].
- */
-internal
-val `OrgGradlePluginGroup`.`distribution-base`: PluginDependencySpec
-    get() = plugins.id("org.gradle.distribution-base")
 
 
 /**
@@ -563,14 +548,6 @@ val `OrgGradlePluginGroup`.`microsoft-visual-cpp-compiler`: PluginDependencySpec
 
 
 /**
- * The `org.gradle.model-reporting-tasks` plugin implemented by [org.gradle.api.plugins.internal.ModelReportingTasksPlugin].
- */
-internal
-val `OrgGradlePluginGroup`.`model-reporting-tasks`: PluginDependencySpec
-    get() = plugins.id("org.gradle.model-reporting-tasks")
-
-
-/**
  * The `org.gradle.native-component` plugin implemented by [org.gradle.nativeplatform.plugins.NativeComponentPlugin].
  */
 internal
@@ -680,14 +657,6 @@ val `OrgGradlePluginGroup`.`scala-base`: PluginDependencySpec
 internal
 val `OrgGradlePluginGroup`.`signing`: PluginDependencySpec
     get() = plugins.id("org.gradle.signing")
-
-
-/**
- * The `org.gradle.software-reporting-tasks` plugin implemented by [org.gradle.api.plugins.SoftwareReportingTasksPlugin].
- */
-internal
-val `OrgGradlePluginGroup`.`software-reporting-tasks`: PluginDependencySpec
-    get() = plugins.id("org.gradle.software-reporting-tasks")
 
 
 /**
